@@ -125,6 +125,12 @@
       
   </dependencies>
   <build>
-    <finalName>seckill</finalName>
-  </build>
+		<plugins>
+			<plugin>
+				<groupId>org.eclipse.jetty</groupId>
+				<artifactId>jetty-maven-plugin</artifactId>
+				<version>9.2.8.v20150217</version>
+			</plugin>
+		</plugins>
+	</build>
 </project>
