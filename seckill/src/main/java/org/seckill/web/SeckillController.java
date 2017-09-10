@@ -80,7 +80,7 @@ public class SeckillController {
 		}
 		SeckillResult<SeckillExecution> result;
 		try {
-			SeckillExecution execution = seckillService.executeSeckill(seckillId, phone, md5);
+			SeckillExecution execution = seckillService.executeSeckillProcedure(seckillId, phone, md5);
 			return new SeckillResult<SeckillExecution>(true,execution);
 		}
 		catch(RepeatKillException e){
